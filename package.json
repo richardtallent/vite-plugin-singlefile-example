@@ -1,14 +1,15 @@
 {
 	"name": "vite-plugin-singlefile-example",
 	"private": true,
-	"version": "0.9.0",
+	"version": "0.10.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vue-tsc --noEmit && vite build",
+		"build": "rimraf dist && vue-tsc --noEmit && vite build",
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"rimraf": "^3.0.2",
 		"vite-plugin-singlefile": "file:../vite-plugin-singlefile",
 		"vue": "^3.2.33"
 	},
