@@ -5,7 +5,7 @@ import basicSsl from "@vitejs/plugin-basic-ssl"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [vue(), basicSsl(), viteSingleFile({ removeViteModuleLoader: true })],
+	plugins: [vue(), basicSsl(), viteSingleFile({ removeViteModuleLoader: false })],
 	build: {
 		minify: true,
 	},
