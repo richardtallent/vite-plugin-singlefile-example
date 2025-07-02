@@ -3,11 +3,11 @@
 		"target": "esnext",
 		"useDefineForClassFields": true,
 		"module": "esnext",
-		"moduleResolution": "node",
 		"strict": true,
 		"jsx": "preserve",
 		"sourceMap": true,
 		"resolveJsonModule": true,
+		"moduleResolution": "bundler",
 		"esModuleInterop": true,
 		"lib": ["esnext", "dom"],
 		"skipLibCheck": true

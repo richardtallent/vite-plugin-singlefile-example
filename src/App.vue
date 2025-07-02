@@ -35,7 +35,7 @@ const testLocalStorage = ref("")
 const testSecureContext = ref("")
 const testXR = ref("")
 const testImmersiveXR = ref("")
-const canvas: Ref<HTMLCanvasElement | null> = ref(null)
+const canvas: Ref = ref(null)
 
 const doTestXR = () => {
 	const gl = canvas.value?.getContext("webgl", { xrCompatible: true })
@@ -73,6 +73,8 @@ onBeforeMount(() => {
 #splash {
 	margin-left: auto;
 	margin-right: auto;
+	background-color: white;
+	padding: 1rem;
 }
 code {
 	font-weight: bold;
